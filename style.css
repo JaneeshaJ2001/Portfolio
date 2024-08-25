@@ -36,13 +36,13 @@ nav,
 nav {
     justify-content: space-around;
     align-items: center;
-    height: 17vh;
+    height: 15vh;
 }
 
 .nav-links {
     gap: 2rem;
     list-style: none;
-    font-size: 1.3rem;
+    font-size: 1.1rem;
 }
 
 a {
@@ -190,7 +190,8 @@ section {
 }
 
 .section__text__p2 {
-    font-size: 1.75rem;
+    font-size: 1.5rem;
+    margin-top: 1rem;
     margin-bottom: 1rem;
 }
 
@@ -219,6 +220,7 @@ section {
     display: flex;
     justify-content: center;
     gap: 1rem;
+    margin-top: 1rem;
 }
 
 .btn {
@@ -261,6 +263,31 @@ section {
     gap: 1rem;
 }
 
+.view-github-container {
+    margin-top: 10px;
+}
+
+.view-github-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: grey;
+    font-size: 12px;
+}
+
+.view-github-link:hover {
+    color: #0056b3;
+    /* Darker color on hover */
+}
+
+.expand-icon {
+    width: 16px;
+    height: 16px;
+    margin-left: 5px;
+    vertical-align: middle;
+    color: grey;
+}
+
 /* ABOUT SECTION */
 
 #about {
@@ -294,13 +321,23 @@ section {
 }
 
 .details-container {
-    padding: 1.5rem;
+    padding: 1.2rem;
     flex: 1;
     background: white;
-    border-radius: 2rem;
     border: rgb(53, 53, 53) 0.1rem solid;
     border-color: rgb(163, 163, 163);
-    text-align: center;
+
+}
+
+.education-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 0.5rem;
+}
+
+.specialization {
+    margin-top: 10px;
 }
 
 .section-container {
@@ -380,6 +417,21 @@ article .icon {
     border-color: rgb(163, 163, 163);
 }
 
+.tech-icons-container {
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.tech-icon {
+    width: 30px;
+    height: 30px;
+    vertical-align: middle;
+    border: 2px solid black;
+    padding: 2px;
+}
+
+
 /* CONTACT */
 
 #contact {
@@ -423,7 +475,7 @@ article .icon {
 /* FOOTER SECTION */
 
 footer {
-    height: 26vh;
+    height: 18vh;
     margin: 0 1rem;
 }
 

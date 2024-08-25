@@ -12,18 +12,19 @@
 
 <body>
     <nav id="desktop-nav">
-        <div class="logo">Janeesha Wickramasinghe</div>
+
         <div>
             <ul class="nav-links">
+                <li><a href="#profile">Profile</a></li>
                 <li><a href="#about">About</a></li>
-                <li><a href="#experience">Experience</a></li>
                 <li><a href="#projects">Projects</a></li>
+                <li><a href="#experience">Experience</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </div>
     </nav>
     <nav id="hamburger-nav">
-        <div class="logo">Janeesha Wickramasinghe</div>
+
         <div class="hamburger-menu">
             <div class="hamburger-icon" onclick="toggleMenu()">
                 <span></span>
@@ -31,9 +32,10 @@
                 <span></span>
             </div>
             <div class="menu-links">
+                <li><a href="#profile" onclick="toggleMenu()">Profile</a></li>
                 <li><a href="#about" onclick="toggleMenu()">About</a></li>
-                <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
                 <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
                 <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
             </div>
         </div>
@@ -43,7 +45,7 @@
         <div class="section__text">
             <p class="section__text__p1">Hello, I'm</p>
             <h1 class="title">Janeesha Wickramasinghe</h1>
-            <p class="section__text__p2">Frontend Developer</p>
+            <p class="section__text__p2">Machine Learning & Data Science Enthusiast</p>
             <div class="btn-container">
                 <button class="btn btn-color-2" onclick="window.open('./assets/resume-example.pdf')">
                     Download CV
@@ -54,18 +56,17 @@
             </div>
             <div id="socials-container">
                 <img src="./assets/linkedin.png" alt="My LinkedIn profile" class="icon"
-                    onclick="location.href='https://linkedin.com/'" />
+                    onclick="location.href='https://www.linkedin.com/in/janeesha-wickramasinghe/'" />
                 <img src="./assets/github.png" alt="My Github profile" class="icon"
-                    onclick="location.href='https://github.com/'" />
+                    onclick="location.href='https://github.com/JaneeshaJ2001/'" />
             </div>
         </div>
         <div class="section__pic-container">
-            <img src="./assets/profile-pic.png" alt="John Doe profile picture" />
+            <img src="./assets/profile.png" alt="Janeesha profile picture" />
         </div>
     </section>
 
     <section id="about">
-        <p class="section__text__p1">Get To Know More</p>
         <h1 class="title">About Me</h1>
         <div class="section-container">
             <div class="section__pic-container">
@@ -73,17 +74,19 @@
             </div>
             <div class="about-details-container">
                 <div class="about-containers">
+
                     <div class="details-container">
-                        <img src="./assets/experience.png" alt="Experience icon" class="icon" />
-                        <h3>Experience</h3>
-                        <p>2+ years <br />Frontend Development</p>
-                    </div>
-                    <div class="details-container">
-                        <img src="./assets/education.png" alt="Education icon" class="icon" />
                         <h3>Education</h3>
-                        <p>B.Sc. Bachelors Degree<br />M.Sc. Masters Degree</p>
+                        <div class="education-header">
+                            <span class="university-name">University of Moratuwa, Katubedda, Sri Lanka</span>
+                            <span class="education-date">2022 - Present</span>
+                        </div>
+                        <p>B.Sc. in Computer Science & Engineering</p>
+                        <p class="specialization">Specializing in Data Science & Engineering</p>
                     </div>
+
                 </div>
+                <strong><i>Areas of Interest: Machine Learning, Data Science, Mathematics, Statistics</i></strong>
                 <div class="text-container">
                     <p>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic quis
@@ -99,8 +102,134 @@
         <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#experience'" />
     </section>
 
+    <section id="projects">
+        <h1 class="title">Projects</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./assets/project-1.png" alt="CardioCare" class="project-img" />
+                    </div>
+                    <h2 class="experience-sub-title project-title">CardioCare</h2>
+                    <span>Automated Cardiac Anomalies Detector, utilizes state-of-art machine learning models to achieve
+                        high accuracy.</span>
+                    <div class="tech-icons-container">
+                        <img src="./assets/tensorflow.png" alt="TensorFlow" class="tech-icon" />
+                        <img src="./assets/Keras.png" alt="Keras" class="tech-icon" />
+                        <img src="./assets/scikit-learn.png" alt="Scikit-Learn" class="tech-icon" />
+                        <img src="./assets/Flask.png" alt="Flask" class="tech-icon" />
+                        <img src="./assets/Streamlit.png" alt="Streamlit" class="tech-icon" />
+                    </div>
+                    <div class="view-github-container">
+                        <a href="" target="_blank" class="view-github-link">
+                            On-going
+                        </a>
+                    </div>
+                </div>
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./assets/project-1.png" alt="HRMS" class="project-img" />
+                    </div>
+                    <h2 class="experience-sub-title project-title">HRMS</h2>
+                    <span>Human Resource Management System to manage and store employee information and handle leave
+                        application
+                        status.</span>
+                    <div class="tech-icons-container">
+                        <img src="./assets/React.png" alt="React" class="tech-icon" />
+                        <img src="./assets/Node.js.png" alt="Node.js" class="tech-icon" />
+                        <img src="./assets/Material UI.png" alt="Material UI" class="tech-icon" />
+                        <img src="./assets/Figma.png" alt="Figma" class="tech-icon" />
+                        <img src="./assets/MySQL.png" alt="MySQL" class="tech-icon" />
+                    </div>
+                    <div class="view-github-container">
+                        <a href="https://github.com/JaneeshaJ2001/Human-Resource-Management-System" target="_blank"
+                            class="view-github-link">
+                            View in GitHub <img src="./assets/share.png" alt="Expand" class="expand-icon" />
+                        </a>
+                    </div>
+                </div>
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./assets/project-1.png" alt="HyperTalk" class="project-img" />
+                    </div>
+                    <h2 class="experience-sub-title project-title">HyperTalk</h2>
+                    <span>Break the silence and bridge the gap with our real-time bidirectional sign language
+                        translator.
+                    </span>
+                    <div class="tech-icons-container">
+                        <img src="./assets/PyTorch.png" alt="PyTorch" class="tech-icon" />
+                        <img src="./assets/tensorflow.png" alt="tensorflow" class="tech-icon" />
+                        <img src="./assets/Flutter.png" alt="Flutter" class="tech-icon" />
+                        <img src="./assets/Node.js.png" alt="Node.js" class="tech-icon" />
+                        <img src="./assets/Firebase.png" alt="Firebase" class="tech-icon" />
+                    </div>
+                    <div class="view-github-container">
+                        <a href="https://youtu.be/9l5DoEMtmWM?si=KP5nBF3mshe-gPeF" target="_blank"
+                            class="view-github-link">
+                            View Demo <img src="./assets/youtube.png" alt="youtube" class="expand-icon" />
+                        </a>
+                    </div>
+                </div>
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./assets/project-1.png" alt="Flower Exchange" class="project-img" />
+                    </div>
+                    <h2 class="experience-sub-title project-title">Flower Exchange</h2>
+                    <span>A mini optimized trading system for a flower exchange. It processes incoming orders, executes
+                        trades and generates Reports.</span>
+                    <div class="tech-icons-container">
+                        <img src="./assets/C++.png" alt="C++" class="tech-icon" />
+                    </div>
+                    <div class="view-github-container">
+                        <a href="https://github.com/JaneeshaJ2001/Flower-Exchange-Project" target="_blank"
+                            class="view-github-link">
+                            View in GitHub <img src="./assets/share.png" alt="Expand" class="expand-icon" />
+                        </a>
+                    </div>
+                </div>
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./assets/project-1.png" alt="AgriHome" class="project-img" />
+                    </div>
+                    <h2 class="experience-sub-title project-title">AgriHome</h2>
+                    <span>Cultivate Your Green Thumb with Efficiency aiming to create a
+                        social network connecting buyers, sellers, and farmers.</span>
+                    <div class="tech-icons-container">
+                        <img src="./assets/Flutter.png" alt="Flutter" class="tech-icon" />
+                        <img src="./assets/Figma.png" alt="Figma" class="tech-icon" />
+                        <img src="./assets/VS Code.png" alt="VS Code" class="tech-icon" />
+                    </div>
+                    <div class="view-github-container">
+                        <a href="https://github.com/JaneeshaJ2001/agrihome" target="_blank" class="view-github-link">
+                            View in GitHub <img src="./assets/share.png" alt="Expand" class="expand-icon" />
+                        </a>
+                    </div>
+                </div>
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./assets/project-1.png" alt="RPAL Compiler" class="project-img" />
+                    </div>
+                    <h2 class="experience-sub-title project-title">RPAL Compiler</h2>
+                    <span>An interpreter for RPAL - functional programming language, includes both lexical analyzer and
+                        parser which outputs an AST.
+                    </span>
+                    <div class="tech-icons-container">
+                        <img src="./assets/Python.png" alt="Python" class="tech-icon" />
+                    </div>
+                    <div class="view-github-container">
+                        <a href="https://github.com/JaneeshaJ2001/RPAL-Interpreter" target="_blank"
+                            class="view-github-link">
+                            View in GitHub <img src="./assets/share.png" alt="Expand" class="expand-icon" />
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#experience'" />
+    </section>
+
     <section id="experience">
-        <p class="section__text__p1">Explore My</p>
         <h1 class="title">Experience</h1>
         <div class="experience-details-container">
             <div class="about-containers">
@@ -186,58 +315,6 @@
                 </div>
             </div>
         </div>
-        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#projects'" />
-    </section>
-
-    <section id="projects">
-        <p class="section__text__p1">Browse My Recent</p>
-        <h1 class="title">Projects</h1>
-        <div class="experience-details-container">
-            <div class="about-containers">
-                <div class="details-container color-container">
-                    <div class="article-container">
-                        <img src="./assets/project-1.png" alt="Project 1" class="project-img" />
-                    </div>
-                    <h2 class="experience-sub-title project-title">Project One</h2>
-                    <div class="btn-container">
-                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
-                            Github
-                        </button>
-                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
-                            Live Demo
-                        </button>
-                    </div>
-                </div>
-                <div class="details-container color-container">
-                    <div class="article-container">
-                        <img src="./assets/project-2.png" alt="Project 2" class="project-img" />
-                    </div>
-                    <h2 class="experience-sub-title project-title">Project Two</h2>
-                    <div class="btn-container">
-                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
-                            Github
-                        </button>
-                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
-                            Live Demo
-                        </button>
-                    </div>
-                </div>
-                <div class="details-container color-container">
-                    <div class="article-container">
-                        <img src="./assets/project-3.png" alt="Project 3" class="project-img" />
-                    </div>
-                    <h2 class="experience-sub-title project-title">Project Three</h2>
-                    <div class="btn-container">
-                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
-                            Github
-                        </button>
-                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
-                            Live Demo
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </div>
         <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#contact'" />
     </section>
 
@@ -247,28 +324,19 @@
         <div class="contact-info-upper-container">
             <div class="contact-info-container">
                 <img src="./assets/email.png" alt="Email icon" class="icon contact-icon email-icon" />
-                <p><a href="mailto:examplemail@gmail.com">Example@gmail.com</a></p>
+                <p><a href="mailto:janeesha.21@cse.mrt.ac.lk">janeesha.21@cse.mrt.ac.lk</a></p>
             </div>
             <div class="contact-info-container">
                 <img src="./assets/linkedin.png" alt="LinkedIn icon" class="icon contact-icon" />
-                <p><a href="https://www.linkedin.com">LinkedIn</a></p>
+                <p><a href="https://www.linkedin.com/in/janeesha-wickramasinghe/">Janeesha Wickramasinghe</a></p>
             </div>
         </div>
     </section>
 
     <footer>
-        <nav>
-            <div class="nav-links-container">
-                <ul class="nav-links">
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#experience">Experience</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </div>
-        </nav>
-        <p>Copyright &#169; 2023 John Doe. All Rights Reserved.</p>
+        <p>Copyright &#169; 2024 Janeesha Wickramasinghe</p>
     </footer>
+
     <script src="script.js"></script>
 </body>
 
